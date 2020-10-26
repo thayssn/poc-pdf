@@ -56,15 +56,17 @@ const credentialType = "digital-experience";
 
 let filesLoaded = 0;
 
+const origin = window.location.origin;
+
 const files = {
     image: {
-        url: `http://localhost:5500/assets/images/${credentialType}.jpg`
+        url: `${origin}/assets/images/${credentialType}.jpg`
     },
     font1: {
-        url: 'http://localhost:5500/assets/fonts/urw_din_cond_italic.woff'
+        url: `${origin}/assets/fonts/urw_din_cond_italic.woff`
     },
     font2: {
-        url: 'http://localhost:5500/assets/fonts/urw_din_cond_bold_italic.woff'
+        url: `${origin}/assets/fonts/urw_din_cond_bold_italic.woff`
     }
 };
 
